@@ -1,0 +1,25 @@
+
+{
+  "name": "twisted1919/yii2-shortcut-functions",
+  "description": "Shortcut functions for Yii2 developers",
+  "keywords": ["yii2", "functions", "shortcut"],
+  "type": "library",
+  "homepage": "https://github.com/twisted1919/yii2-shortcut-functions",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "twisted1919",
+      "homepage": "https://github.com/twisted1919"
+    },
+    {
+      "name": "Contributors",
+      "homepage": "https://github.com/raveren/twisted1919/contributors"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "autoload": {
+    "files": ["src/helpers.php"]
+  }
+}
