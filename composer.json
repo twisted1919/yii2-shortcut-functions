@@ -20,6 +20,6 @@
     "php": ">=5.4.0"
   },
   "autoload": {
-    "files": ["src/helpers.php"]
+    "files": ["src/functions.php"]
   }
 }
