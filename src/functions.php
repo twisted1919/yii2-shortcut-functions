@@ -281,3 +281,21 @@ if (!function_exists('api')) {
         return app_get('api');
     }
 }
+
+/**
+ * Return the elasticsearch component
+ */
+if (!function_exists('elasticsearch')) {
+    function elasticsearch() {
+        return app_get('elasticsearch');
+    }
+}
+
+/**
+ * Return the elastica component (extern elastic search library)
+ */
+if (!function_exists('elastica')) {
+    function elastica() {
+        return app_get('elastica');
+    }
+}
