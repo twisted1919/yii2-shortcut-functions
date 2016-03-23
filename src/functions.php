@@ -299,3 +299,30 @@ if (!function_exists('elastica')) {
         return app_get('elastica');
     }
 }
+
+/**
+ * Return encode html string
+ */
+if (!function_exists('html_encode')) {
+    function html_encode($content) {
+        return \yii\helpers\Html::encode($content);
+    }
+}
+
+/**
+ * Return decoded html string
+ */
+if (!function_exists('html_decode')) {
+    function html_decode($content) {
+        return \yii\helpers\Html::decode($content);
+    }
+}
+
+/**
+ * Return a safe html string
+ */
+if (!function_exists('html_purify')) {
+    function html_purify($content, $config = null) {
+        return \yii\helpers\HtmlPurifier::process($content, $config);
+    }
+}
