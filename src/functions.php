@@ -15,6 +15,15 @@ if (!function_exists('app')) {
 }
 
 /**
+ * Check the named app component
+ */
+if (!function_exists('app_has')) {
+    function app_has($component, $checkInstance = false) {
+        return app()->has($component, $checkInstance);
+    }
+}
+
+/**
  * Return named app component
  */
 if (!function_exists('app_get')) {
