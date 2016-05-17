@@ -144,7 +144,6 @@ if (!function_exists('cache')) {
     }
 }
 
-
 /**
  * Translation
  */
@@ -175,7 +174,6 @@ if (!function_exists('security')) {
     }
 }
 
-
 /**
  * Create the url
  */
@@ -185,7 +183,6 @@ if (!function_exists('url')) {
     }
 }
 
-
 /**
  * Get the auth manager
  */
@@ -194,7 +191,6 @@ if (!function_exists('auth_manager')) {
         return app_get('authManager');
     }
 }
-
 
 /**
  * Get the app queue
@@ -247,20 +243,6 @@ if (!function_exists('awssdk')) {
 if (!function_exists('mailer')) {
     function mailer() {
         return app_get('mailer');
-    }
-}
-
-/**
- * Unset array key
- */
-if (!function_exists('unset_array_keys')) {
-    function unset_array_keys(array $array = [], array $keys = []) {
-        foreach ($array as $key => $value) {
-            if (in_array($key, $keys)) {
-                unset($array[$key]);
-            }
-        }
-        return $array;
     }
 }
 
