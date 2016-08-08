@@ -145,6 +145,24 @@ if (!function_exists('cache')) {
 }
 
 /**
+ * Return the options component
+ */
+if (!function_exists('options')) {
+    function cache() {
+        return app_get('options');
+    }
+}
+
+/**
+ * Return the options component
+ */
+if (!function_exists('options')) {
+    function cache() {
+        return app_get('options');
+    }
+}
+
+/**
  * Translation
  */
 if (!function_exists('t')) {
