@@ -148,7 +148,7 @@ if (!function_exists('cache')) {
  * Return the options component
  */
 if (!function_exists('options')) {
-    function cache() {
+    function options() {
         return app_get('options');
     }
 }
