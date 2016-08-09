@@ -154,6 +154,15 @@ if (!function_exists('options')) {
 }
 
 /**
+ * Return the notify component
+ */
+if (!function_exists('notify')) {
+    function notify() {
+        return app_get('notify');
+    }
+}
+
+/**
  * Return the options component
  */
 if (!function_exists('options')) {
