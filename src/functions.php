@@ -130,7 +130,7 @@ if (!function_exists('app_param')) {
  * Return a param from application view params
  */
 if (!function_exists('view_param')) {
-    function app_param($key, $default = null) {
+    function view_param($key, $default = null) {
         return array_get(app()->view->params, $key, $default);
     }
 }
