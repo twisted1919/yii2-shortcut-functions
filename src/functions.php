@@ -145,15 +145,6 @@ if (!function_exists('db')) {
 }
 
 /**
- * Return the cache component
- */
-if (!function_exists('cache')) {
-    function cache() {
-        return app_get('cache');
-    }
-}
-
-/**
  * Return the options component
  */
 if (!function_exists('options')) {
@@ -172,11 +163,11 @@ if (!function_exists('notify')) {
 }
 
 /**
- * Return the options component
+ * Return the cache component
  */
-if (!function_exists('options')) {
+if (!function_exists('cache')) {
     function cache() {
-        return app_get('options');
+        return app_get('cache');
     }
 }
 
