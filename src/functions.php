@@ -344,3 +344,21 @@ if (!function_exists('html_purify')) {
         return \yii\helpers\HtmlPurifier::process($content, $config);
     }
 }
+
+/**
+ * Set an alias for the app
+ */
+if (!function_exists('set_alias')) {
+    function set_alias($alias, $path) {
+        return \Yii::setAlias($alias, $path);
+    }
+}
+
+/**
+ * Return an alias from the app
+ */
+if (!function_exists('get_alias')) {
+    function get_alias($alias, $throwException = true) {
+        return \Yii::getAlias($alias, $throwException);
+    }
+}
