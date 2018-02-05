@@ -102,6 +102,19 @@ if (!function_exists('user')) {
 }
 
 /**
+ * Return the customer object
+ */
+if (!function_exists('customer')) {
+
+    /**
+     * @return \yii\web\User
+     */
+    function customer() {
+        return app_get('customer');
+    }
+}
+
+/**
  * Return the di container object
  */
 if (!function_exists('container')) {
