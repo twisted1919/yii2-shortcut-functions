@@ -380,7 +380,7 @@ if (!function_exists('asset_bundle_url')) {
      * @return string
      */
     function asset_bundle_url($className, $uri = '') {
-        return rtrim(asset_manager()->getBundle($className), '/') . '/' . ltrim($uri, '/');
+        return rtrim(asset_manager()->getBundle($className)->baseUrl, '/') . '/' . ltrim($uri, '/');
     }
 }
 
