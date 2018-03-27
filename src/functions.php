@@ -357,30 +357,30 @@ if (!function_exists('auth_manager')) {
 }
 
 /**
- * Get the assets manager
+ * Get the asset manager
  */
-if (!function_exists('assets_manager')) {
+if (!function_exists('asset_manager')) {
 
     /**
      * @return mixed
      */
-    function assets_manager() {
-        return app_get('assetsManager');
+    function asset_manager() {
+        return app_get('assetManager');
     }
 }
 
 /**
  * Get the assets bundle url
  */
-if (!function_exists('assets_bundle_url')) {
+if (!function_exists('asset_bundle_url')) {
 
     /**
      * @param string $className
      * @param string $uri
      * @return string
      */
-    function assets_bundle_url($className, $uri = '') {
-        return rtrim(assets_manager()->getBundle($className), '/') . '/' . ltrim($uri, '/');
+    function asset_bundle_url($className, $uri = '') {
+        return rtrim(asset_manager()->getBundle($className), '/') . '/' . ltrim($uri, '/');
     }
 }
 
