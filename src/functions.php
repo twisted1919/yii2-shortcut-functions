@@ -357,6 +357,34 @@ if (!function_exists('auth_manager')) {
 }
 
 /**
+ * Get the assets manager
+ */
+if (!function_exists('assets_manager')) {
+
+    /**
+     * @return mixed
+     */
+    function assets_manager() {
+        return app_get('assetsManager');
+    }
+}
+
+/**
+ * Get the assets bundle url
+ */
+if (!function_exists('assets_bundle_url')) {
+
+    /**
+     * @param string $className
+     * @param string $uri
+     * @return string
+     */
+    function assets_bundle_url($className, $uri = '') {
+        return rtrim(assets_manager()->getBundle($className), '/') . '/' . ltrim($uri, '/');
+    }
+}
+
+/**
  * Get the app queue
  */
 if (!function_exists('queue')) {
