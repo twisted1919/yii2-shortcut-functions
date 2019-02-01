@@ -385,6 +385,21 @@ if (!function_exists('asset_bundle_url')) {
 }
 
 /**
+ * Get the assets bundle path
+ */
+if (!function_exists('asset_bundle_path')) {
+
+	/**
+	 * @param string $className
+	 * @param string $uri
+	 * @return string
+	 */
+	function asset_bundle_path($className, $uri = '') {
+		return rtrim(asset_manager()->getBundle($className)->basePath, '/') . '/' . ltrim($uri, '/');
+	}
+}
+
+/**
  * Get the app queue
  */
 if (!function_exists('queue')) {
