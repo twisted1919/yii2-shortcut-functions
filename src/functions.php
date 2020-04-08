@@ -134,8 +134,8 @@ if (!function_exists('env')) {
 
     /**
      * @param string $key
-     * @param null $default
-     * @return array|false|null|string
+     * @param mixed $default
+     * @return mixed
      */
     function env($key, $default = null) {
         if (false !== ($value = getenv($key))) {
@@ -152,8 +152,8 @@ if (!function_exists('array_get')) {
 
     /**
      * @param array $source
-     * @param $key
-     * @param null $default
+     * @param mixed $key
+     * @param mixed $default
      * @return mixed
      */
     function array_get(array $source = array(), $key, $default = null) {
@@ -181,7 +181,7 @@ if (!function_exists('fs')) {
 if (!function_exists('dd')) {
 
     /**
-     * @param $data
+     * @param mixed $data
      * @param int $level
      * @param bool $highlight
      */
@@ -197,8 +197,8 @@ if (!function_exists('dd')) {
 if (!function_exists('app_param')) {
 
     /**
-     * @param $key
-     * @param null $default
+     * @param string $key
+     * @param mixed $default
      * @return mixed
      */
     function app_param($key, $default = null) {
@@ -212,8 +212,8 @@ if (!function_exists('app_param')) {
 if (!function_exists('view_param')) {
 
     /**
-     * @param $key
-     * @param null $default
+     * @param string $key
+     * @param mixed $default
      * @return mixed
      */
     function view_param($key, $default = null) {
