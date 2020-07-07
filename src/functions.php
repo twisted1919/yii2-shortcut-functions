@@ -458,6 +458,19 @@ if (!function_exists('mailer')) {
 }
 
 /**
+ * Return the mutex component
+ */
+if (!function_exists('mutex')) {
+
+	/**
+	 * @return \yii\mutex\Mutex
+	 */
+	function mutex() {
+		return app_get('mutex');
+	}
+}
+
+/**
  * Return the session component
  */
 if (!function_exists('session')) {
