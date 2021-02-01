@@ -156,7 +156,7 @@ if (!function_exists('array_get')) {
      * @param mixed $default
      * @return mixed
      */
-    function array_get(array $source = array(), $key, $default = null) {
+    function array_get(array $source, $key, $default = null) {
         return \yii\helpers\ArrayHelper::getValue($source, $key, $default);
     }
 }
