@@ -450,7 +450,7 @@ if (!function_exists('awssdk')) {
 if (!function_exists('mailer')) {
 
     /**
-     * @return \app\yii\swiftmailer\Mailer
+     * @return \yii\mail\MailerInterface
      */
     function mailer() {
         return app_get('mailer');
